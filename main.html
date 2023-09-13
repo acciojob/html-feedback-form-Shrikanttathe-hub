@@ -1,24 +1,28 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Feedback Form</title>
+	<link rel="stylesheet" href="styles.css">
+	<title>Feedback Form</title>
 </head>
+ 
 <body>
-    <h1>Feedback Form</h1>
+	<!-- the entire body must be written by student -->
+	<h1>Feedback Form</h1>
     <form action="submit_feedback.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br><br>
+		<label for="name">Name</label>
+		<input type="text" id="name" min="3" max="50"><br><br>
+		<label for="portfolio">Portfolio</label>
+		<input type="url" id="portfolio" ><br><br>
+		<label for="favColor">Favorite Color</label>
+		<input type="color" id="favColor" ><br><br>
+		<label for="favColor">Likeness</label>
+		<input type="range" id="likeness" min="1", max="100" ><br><br>
+       <input type="submit" value="submit" >
+		<script type="text/javascript" src="./script.js">
+</script>
 
-        <label for="portfolio">Portfolio:</label>
-        <input type="url" id="portfolio" name="portfolio" required><br><br>
-
-        <label for="favColor">Favorite Color:</label>
-        <input type="color" id="favColor" name="favColor" required><br><br>
-
-        <label for="likeness">Likeness:</label>
-        <input type="range" id="likeness" name="likeness" min="1" max="100" required><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
 </body>
+
 </html>
